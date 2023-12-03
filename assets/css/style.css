@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    grid-area: header;
+    min-height: 10vh;
+}
+
+aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+}
+
+.products {
+    grid-area: products;
+}
+
+footer {
+    grid-area: footer;
+    min-height: 5vh;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside products"
+    "aside products"
+    "footer footer";
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
